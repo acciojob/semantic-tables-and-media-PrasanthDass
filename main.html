@@ -1,16 +1,88 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Tables and Media</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f8f8f8;
+    }
 
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin-bottom: 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 10px;
+      text-align: center;
+    }
+
+    thead {
+      background-color: #b33a3a;
+      color: white;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #333;
+    }
+
+    ol {
+      margin-top: 10px;
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Roll Number</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>101</td>
+        <td>Ritesh</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Priya</td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Arjun</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>List of medias</h2>
+
+  <ol>
+    <li>
+      <img src="https://picsum.photos/id/123/200/300" alt="Random Image from Picsum">
+    </li>
+    <li>
+      <video width="320" height="240" controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </li>
+    <li>
+      <audio controls>
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </li>
+  </ol>
 
 </body>
-
 </html>
